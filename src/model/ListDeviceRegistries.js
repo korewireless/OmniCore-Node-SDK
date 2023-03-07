@@ -15,19 +15,19 @@ import ApiClient from '../ApiClient';
 import DeviceRegistry from './DeviceRegistry';
 
 /**
- * The ListDeviceRegistriesResponse model module.
- * @module model/ListDeviceRegistriesResponse
+ * The ListDeviceRegistries model module.
+ * @module model/ListDeviceRegistries
  * @version 1.0
  */
-class ListDeviceRegistriesResponse {
+class ListDeviceRegistries {
     /**
-     * Constructs a new <code>ListDeviceRegistriesResponse</code>.
-     * @alias module:model/ListDeviceRegistriesResponse
+     * Constructs a new <code>ListDeviceRegistries</code>.
+     * @alias module:model/ListDeviceRegistries
      * @param deviceRegistries {Array.<module:model/DeviceRegistry>} 
      */
     constructor(deviceRegistries) { 
         
-        ListDeviceRegistriesResponse.initialize(this, deviceRegistries);
+        ListDeviceRegistries.initialize(this, deviceRegistries);
     }
 
     /**
@@ -40,15 +40,15 @@ class ListDeviceRegistriesResponse {
     }
 
     /**
-     * Constructs a <code>ListDeviceRegistriesResponse</code> from a plain JavaScript object, optionally creating a new instance.
+     * Constructs a <code>ListDeviceRegistries</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/ListDeviceRegistriesResponse} obj Optional instance to populate.
-     * @return {module:model/ListDeviceRegistriesResponse} The populated <code>ListDeviceRegistriesResponse</code> instance.
+     * @param {module:model/ListDeviceRegistries} obj Optional instance to populate.
+     * @return {module:model/ListDeviceRegistries} The populated <code>ListDeviceRegistries</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new ListDeviceRegistriesResponse();
+            obj = obj || new ListDeviceRegistries();
 
             if (data.hasOwnProperty('deviceRegistries')) {
                 obj['deviceRegistries'] = ApiClient.convertToType(data['deviceRegistries'], [DeviceRegistry]);
@@ -67,13 +67,13 @@ class ListDeviceRegistriesResponse {
     }
 
     /**
-     * Validates the JSON data with respect to <code>ListDeviceRegistriesResponse</code>.
+     * Validates the JSON data with respect to <code>ListDeviceRegistries</code>.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>ListDeviceRegistriesResponse</code>.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>ListDeviceRegistries</code>.
      */
     static validateJSON(data) {
         // check to make sure all required properties are present in the JSON string
-        for (const property of ListDeviceRegistriesResponse.RequiredProperties) {
+        for (const property of ListDeviceRegistries.RequiredProperties) {
             if (!data[property]) {
                 throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
             }
@@ -95,32 +95,32 @@ class ListDeviceRegistriesResponse {
 
 }
 
-ListDeviceRegistriesResponse.RequiredProperties = ["deviceRegistries"];
+ListDeviceRegistries.RequiredProperties = ["deviceRegistries"];
 
 /**
  * @member {Array.<module:model/DeviceRegistry>} deviceRegistries
  */
-ListDeviceRegistriesResponse.prototype['deviceRegistries'] = undefined;
+ListDeviceRegistries.prototype['deviceRegistries'] = undefined;
 
 /**
  * @member {Number} pageNumber
  */
-ListDeviceRegistriesResponse.prototype['pageNumber'] = undefined;
+ListDeviceRegistries.prototype['pageNumber'] = undefined;
 
 /**
  * @member {Number} pageSize
  */
-ListDeviceRegistriesResponse.prototype['pageSize'] = undefined;
+ListDeviceRegistries.prototype['pageSize'] = undefined;
 
 /**
  * @member {Number} totalCount
  */
-ListDeviceRegistriesResponse.prototype['totalCount'] = undefined;
+ListDeviceRegistries.prototype['totalCount'] = undefined;
 
 
 
 
 
 
-export default ListDeviceRegistriesResponse;
+export default ListDeviceRegistries;
 

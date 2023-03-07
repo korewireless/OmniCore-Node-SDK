@@ -13,12 +13,13 @@
 
 
 import ApiClient from "../ApiClient";
+import CreateRegistry200Response from '../model/CreateRegistry200Response';
+import CreateRegistryRequest from '../model/CreateRegistryRequest';
 import DeviceRegistry from '../model/DeviceRegistry';
 import GenericErrorResponse from '../model/GenericErrorResponse';
 import Info from '../model/Info';
-import ListDeviceRegistriesResponse from '../model/ListDeviceRegistriesResponse';
-import NewRegistry from '../model/NewRegistry';
-import UpdateRegistry from '../model/UpdateRegistry';
+import ListDeviceRegistries from '../model/ListDeviceRegistries';
+import UpdateRegistryRequest from '../model/UpdateRegistryRequest';
 
 /**
 * Registry service.
@@ -43,26 +44,24 @@ export default class RegistryApi {
      * Callback function to receive the result of the createRegistry operation.
      * @callback module:api/RegistryApi~createRegistryCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/DeviceRegistry} data The data returned by the service call.
+     * @param {module:model/CreateRegistry200Response} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Create a registry
      * @param {String} subscriptionId Subscription ID
-     * @param {module:model/NewRegistry} registry application/json
+     * @param {Object} opts Optional parameters
+     * @param {module:model/CreateRegistryRequest} opts.registry application/json
      * @param {module:api/RegistryApi~createRegistryCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/DeviceRegistry}
+     * data is of type: {@link module:model/CreateRegistry200Response}
      */
-    createRegistry(subscriptionId, registry, callback) {
-      let postBody = registry;
+    createRegistry(subscriptionId, opts, callback) {
+      opts = opts || {};
+      let postBody = opts['registry'];
       // verify the required parameter 'subscriptionId' is set
       if (subscriptionId === undefined || subscriptionId === null) {
         throw new Error("Missing the required parameter 'subscriptionId' when calling createRegistry");
-      }
-      // verify the required parameter 'registry' is set
-      if (registry === undefined || registry === null) {
-        throw new Error("Missing the required parameter 'registry' when calling createRegistry");
       }
 
       let pathParams = {
@@ -78,7 +77,7 @@ export default class RegistryApi {
       let authNames = ['bearerAuth'];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
-      let returnType = DeviceRegistry;
+      let returnType = CreateRegistry200Response;
       return this.apiClient.callApi(
         '/subscriptions/{subscriptionId}/registries', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -138,7 +137,7 @@ export default class RegistryApi {
      * Callback function to receive the result of the getRegistries operation.
      * @callback module:api/RegistryApi~getRegistriesCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/ListDeviceRegistriesResponse} data The data returned by the service call.
+     * @param {module:model/ListDeviceRegistries} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -149,7 +148,7 @@ export default class RegistryApi {
      * @param {Number} opts.pageNumber Page Number
      * @param {Number} opts.pageSize Page Size
      * @param {module:api/RegistryApi~getRegistriesCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/ListDeviceRegistriesResponse}
+     * data is of type: {@link module:model/ListDeviceRegistries}
      */
     getRegistries(subscriptionId, opts, callback) {
       opts = opts || {};
@@ -174,7 +173,7 @@ export default class RegistryApi {
       let authNames = ['bearerAuth'];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = ListDeviceRegistriesResponse;
+      let returnType = ListDeviceRegistries;
       return this.apiClient.callApi(
         '/subscriptions/{subscriptionId}/registries', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -234,7 +233,7 @@ export default class RegistryApi {
      * Callback function to receive the result of the updateRegistry operation.
      * @callback module:api/RegistryApi~updateRegistryCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/DeviceRegistry} data The data returned by the service call.
+     * @param {module:model/CreateRegistry200Response} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -243,12 +242,14 @@ export default class RegistryApi {
      * @param {String} subscriptionId Subscription ID
      * @param {String} registryId Registry ID
      * @param {module:model/String} updateMask values to be updated: eventNotificationConfigs,stateNotificationConfig.pubsub_topic_name,logNotificationConfig.pubsub_topic_name,mqttConfig.mqtt_enabled_state,httpConfig.http_enabled_state,logLevel,credentials
-     * @param {module:model/UpdateRegistry} registry application/json
+     * @param {Object} opts Optional parameters
+     * @param {module:model/UpdateRegistryRequest} opts.registry application/json
      * @param {module:api/RegistryApi~updateRegistryCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/DeviceRegistry}
+     * data is of type: {@link module:model/CreateRegistry200Response}
      */
-    updateRegistry(subscriptionId, registryId, updateMask, registry, callback) {
-      let postBody = registry;
+    updateRegistry(subscriptionId, registryId, updateMask, opts, callback) {
+      opts = opts || {};
+      let postBody = opts['registry'];
       // verify the required parameter 'subscriptionId' is set
       if (subscriptionId === undefined || subscriptionId === null) {
         throw new Error("Missing the required parameter 'subscriptionId' when calling updateRegistry");
@@ -260,10 +261,6 @@ export default class RegistryApi {
       // verify the required parameter 'updateMask' is set
       if (updateMask === undefined || updateMask === null) {
         throw new Error("Missing the required parameter 'updateMask' when calling updateRegistry");
-      }
-      // verify the required parameter 'registry' is set
-      if (registry === undefined || registry === null) {
-        throw new Error("Missing the required parameter 'registry' when calling updateRegistry");
       }
 
       let pathParams = {
@@ -281,7 +278,7 @@ export default class RegistryApi {
       let authNames = ['bearerAuth'];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
-      let returnType = DeviceRegistry;
+      let returnType = CreateRegistry200Response;
       return this.apiClient.callApi(
         '/subscriptions/{subscriptionId}/registries/{registryId}', 'PATCH',
         pathParams, queryParams, headerParams, formParams, postBody,

@@ -17,6 +17,8 @@ import BindRequest from './model/BindRequest';
 import BindRequestIdsGateway from './model/BindRequestIdsGateway';
 import BlockCommunicationBody from './model/BlockCommunicationBody';
 import CreateNewDevice from './model/CreateNewDevice';
+import CreateRegistry200Response from './model/CreateRegistry200Response';
+import CreateRegistryRequest from './model/CreateRegistryRequest';
 import Device from './model/Device';
 import DeviceCertificate from './model/DeviceCertificate';
 import DeviceCommand from './model/DeviceCommand';
@@ -33,7 +35,7 @@ import GenericErrorResponse from './model/GenericErrorResponse';
 import HttpConfig from './model/HttpConfig';
 import Info from './model/Info';
 import ListDeviceConfigVersionsResponse from './model/ListDeviceConfigVersionsResponse';
-import ListDeviceRegistriesResponse from './model/ListDeviceRegistriesResponse';
+import ListDeviceRegistries from './model/ListDeviceRegistries';
 import ListDeviceStatesResponse from './model/ListDeviceStatesResponse';
 import ListDevicesResponse from './model/ListDevicesResponse';
 import LogLevel from './model/LogLevel';
@@ -46,6 +48,7 @@ import RegistryCertificate from './model/RegistryCertificate';
 import RegistryCredential from './model/RegistryCredential';
 import UpdateDevice from './model/UpdateDevice';
 import UpdateRegistry from './model/UpdateRegistry';
+import UpdateRegistryRequest from './model/UpdateRegistryRequest';
 import X509CertificateDetails from './model/X509CertificateDetails';
 import DeviceApi from './api/DeviceApi';
 import RegistryApi from './api/RegistryApi';
@@ -112,6 +115,18 @@ export {
      * @property {module:model/CreateNewDevice}
      */
     CreateNewDevice,
+
+    /**
+     * The CreateRegistry200Response model constructor.
+     * @property {module:model/CreateRegistry200Response}
+     */
+    CreateRegistry200Response,
+
+    /**
+     * The CreateRegistryRequest model constructor.
+     * @property {module:model/CreateRegistryRequest}
+     */
+    CreateRegistryRequest,
 
     /**
      * The Device model constructor.
@@ -210,10 +225,10 @@ export {
     ListDeviceConfigVersionsResponse,
 
     /**
-     * The ListDeviceRegistriesResponse model constructor.
-     * @property {module:model/ListDeviceRegistriesResponse}
+     * The ListDeviceRegistries model constructor.
+     * @property {module:model/ListDeviceRegistries}
      */
-    ListDeviceRegistriesResponse,
+    ListDeviceRegistries,
 
     /**
      * The ListDeviceStatesResponse model constructor.
@@ -286,6 +301,12 @@ export {
      * @property {module:model/UpdateRegistry}
      */
     UpdateRegistry,
+
+    /**
+     * The UpdateRegistryRequest model constructor.
+     * @property {module:model/UpdateRegistryRequest}
+     */
+    UpdateRegistryRequest,
 
     /**
      * The X509CertificateDetails model constructor.

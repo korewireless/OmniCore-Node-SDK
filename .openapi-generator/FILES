@@ -7,6 +7,8 @@ docs/BindRequest.md
 docs/BindRequestIdsGateway.md
 docs/BlockCommunicationBody.md
 docs/CreateNewDevice.md
+docs/CreateRegistry200Response.md
+docs/CreateRegistryRequest.md
 docs/Device.md
 docs/DeviceApi.md
 docs/DeviceCertificate.md
@@ -24,7 +26,7 @@ docs/GenericErrorResponse.md
 docs/HttpConfig.md
 docs/Info.md
 docs/ListDeviceConfigVersionsResponse.md
-docs/ListDeviceRegistriesResponse.md
+docs/ListDeviceRegistries.md
 docs/ListDeviceStatesResponse.md
 docs/ListDevicesResponse.md
 docs/LogLevel.md
@@ -38,6 +40,7 @@ docs/RegistryCertificate.md
 docs/RegistryCredential.md
 docs/UpdateDevice.md
 docs/UpdateRegistry.md
+docs/UpdateRegistryRequest.md
 docs/X509CertificateDetails.md
 git_push.sh
 mocha.opts
@@ -50,6 +53,8 @@ src/model/BindRequest.js
 src/model/BindRequestIdsGateway.js
 src/model/BlockCommunicationBody.js
 src/model/CreateNewDevice.js
+src/model/CreateRegistry200Response.js
+src/model/CreateRegistryRequest.js
 src/model/Device.js
 src/model/DeviceCertificate.js
 src/model/DeviceCommand.js
@@ -66,7 +71,7 @@ src/model/GenericErrorResponse.js
 src/model/HttpConfig.js
 src/model/Info.js
 src/model/ListDeviceConfigVersionsResponse.js
-src/model/ListDeviceRegistriesResponse.js
+src/model/ListDeviceRegistries.js
 src/model/ListDeviceStatesResponse.js
 src/model/ListDevicesResponse.js
 src/model/LogLevel.js
@@ -79,6 +84,7 @@ src/model/RegistryCertificate.js
 src/model/RegistryCredential.js
 src/model/UpdateDevice.js
 src/model/UpdateRegistry.js
+src/model/UpdateRegistryRequest.js
 src/model/X509CertificateDetails.js
 test/api/DeviceApi.spec.js
 test/api/RegistryApi.spec.js
@@ -86,6 +92,8 @@ test/model/BindRequest.spec.js
 test/model/BindRequestIdsGateway.spec.js
 test/model/BlockCommunicationBody.spec.js
 test/model/CreateNewDevice.spec.js
+test/model/CreateRegistry200Response.spec.js
+test/model/CreateRegistryRequest.spec.js
 test/model/Device.spec.js
 test/model/DeviceCertificate.spec.js
 test/model/DeviceCommand.spec.js
@@ -102,7 +110,7 @@ test/model/GenericErrorResponse.spec.js
 test/model/HttpConfig.spec.js
 test/model/Info.spec.js
 test/model/ListDeviceConfigVersionsResponse.spec.js
-test/model/ListDeviceRegistriesResponse.spec.js
+test/model/ListDeviceRegistries.spec.js
 test/model/ListDeviceStatesResponse.spec.js
 test/model/ListDevicesResponse.spec.js
 test/model/LogLevel.spec.js
@@ -115,4 +123,5 @@ test/model/RegistryCertificate.spec.js
 test/model/RegistryCredential.spec.js
 test/model/UpdateDevice.spec.js
 test/model/UpdateRegistry.spec.js
+test/model/UpdateRegistryRequest.spec.js
 test/model/X509CertificateDetails.spec.js

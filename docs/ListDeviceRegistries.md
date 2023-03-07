@@ -1,4 +1,4 @@
-# OmniCoreModelAndStateManagementApi.ListDeviceRegistriesResponse
+# OmniCoreModelAndStateManagementApi.ListDeviceRegistries
 
 ## Properties
 

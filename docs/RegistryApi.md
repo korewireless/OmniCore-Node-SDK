@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 ## createRegistry
 
-> DeviceRegistry createRegistry(subscriptionId, registry)
+> CreateRegistry200Response createRegistry(subscriptionId, opts)
 
 
 
@@ -31,8 +31,10 @@ bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 
 let apiInstance = new OmniCoreModelAndStateManagementApi.RegistryApi();
 let subscriptionId = "subscriptionId_example"; // String | Subscription ID
-let registry = new OmniCoreModelAndStateManagementApi.NewRegistry(); // NewRegistry | application/json
-apiInstance.createRegistry(subscriptionId, registry, (error, data, response) => {
+let opts = {
+  'registry': new OmniCoreModelAndStateManagementApi.CreateRegistryRequest() // CreateRegistryRequest | application/json
+};
+apiInstance.createRegistry(subscriptionId, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -47,11 +49,11 @@ apiInstance.createRegistry(subscriptionId, registry, (error, data, response) => 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **subscriptionId** | **String**| Subscription ID | 
- **registry** | [**NewRegistry**](NewRegistry.md)| application/json | 
+ **registry** | [**CreateRegistryRequest**](CreateRegistryRequest.md)| application/json | [optional] 
 
 ### Return type
 
-[**DeviceRegistry**](DeviceRegistry.md)
+[**CreateRegistry200Response**](CreateRegistry200Response.md)
 
 ### Authorization
 
@@ -116,7 +118,7 @@ Name | Type | Description  | Notes
 
 ## getRegistries
 
-> ListDeviceRegistriesResponse getRegistries(subscriptionId, opts)
+> ListDeviceRegistries getRegistries(subscriptionId, opts)
 
 
 
@@ -157,7 +159,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ListDeviceRegistriesResponse**](ListDeviceRegistriesResponse.md)
+[**ListDeviceRegistries**](ListDeviceRegistries.md)
 
 ### Authorization
 
@@ -222,7 +224,7 @@ Name | Type | Description  | Notes
 
 ## updateRegistry
 
-> DeviceRegistry updateRegistry(subscriptionId, registryId, updateMask, registry)
+> CreateRegistry200Response updateRegistry(subscriptionId, registryId, updateMask, opts)
 
 
 
@@ -241,8 +243,10 @@ let apiInstance = new OmniCoreModelAndStateManagementApi.RegistryApi();
 let subscriptionId = "subscriptionId_example"; // String | Subscription ID
 let registryId = "registryId_example"; // String | Registry ID
 let updateMask = "updateMask_example"; // String | values to be updated: eventNotificationConfigs,stateNotificationConfig.pubsub_topic_name,logNotificationConfig.pubsub_topic_name,mqttConfig.mqtt_enabled_state,httpConfig.http_enabled_state,logLevel,credentials
-let registry = new OmniCoreModelAndStateManagementApi.UpdateRegistry(); // UpdateRegistry | application/json
-apiInstance.updateRegistry(subscriptionId, registryId, updateMask, registry, (error, data, response) => {
+let opts = {
+  'registry': new OmniCoreModelAndStateManagementApi.UpdateRegistryRequest() // UpdateRegistryRequest | application/json
+};
+apiInstance.updateRegistry(subscriptionId, registryId, updateMask, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -259,11 +263,11 @@ Name | Type | Description  | Notes
  **subscriptionId** | **String**| Subscription ID | 
  **registryId** | **String**| Registry ID | 
  **updateMask** | **String**| values to be updated: eventNotificationConfigs,stateNotificationConfig.pubsub_topic_name,logNotificationConfig.pubsub_topic_name,mqttConfig.mqtt_enabled_state,httpConfig.http_enabled_state,logLevel,credentials | 
- **registry** | [**UpdateRegistry**](UpdateRegistry.md)| application/json | 
+ **registry** | [**UpdateRegistryRequest**](UpdateRegistryRequest.md)| application/json | [optional] 
 
 ### Return type
 
-[**DeviceRegistry**](DeviceRegistry.md)
+[**CreateRegistry200Response**](CreateRegistry200Response.md)
 
 ### Authorization
 

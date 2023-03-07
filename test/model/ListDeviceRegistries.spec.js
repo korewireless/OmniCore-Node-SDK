@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new OmniCoreModelAndStateManagementApi.ListDeviceRegistriesResponse();
+    instance = new OmniCoreModelAndStateManagementApi.ListDeviceRegistries();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,34 +47,34 @@
       object[property] = value;
   }
 
-  describe('ListDeviceRegistriesResponse', function() {
-    it('should create an instance of ListDeviceRegistriesResponse', function() {
-      // uncomment below and update the code to test ListDeviceRegistriesResponse
-      //var instance = new OmniCoreModelAndStateManagementApi.ListDeviceRegistriesResponse();
-      //expect(instance).to.be.a(OmniCoreModelAndStateManagementApi.ListDeviceRegistriesResponse);
+  describe('ListDeviceRegistries', function() {
+    it('should create an instance of ListDeviceRegistries', function() {
+      // uncomment below and update the code to test ListDeviceRegistries
+      //var instance = new OmniCoreModelAndStateManagementApi.ListDeviceRegistries();
+      //expect(instance).to.be.a(OmniCoreModelAndStateManagementApi.ListDeviceRegistries);
     });
 
     it('should have the property deviceRegistries (base name: "deviceRegistries")', function() {
       // uncomment below and update the code to test the property deviceRegistries
-      //var instance = new OmniCoreModelAndStateManagementApi.ListDeviceRegistriesResponse();
+      //var instance = new OmniCoreModelAndStateManagementApi.ListDeviceRegistries();
       //expect(instance).to.be();
     });
 
     it('should have the property pageNumber (base name: "pageNumber")', function() {
       // uncomment below and update the code to test the property pageNumber
-      //var instance = new OmniCoreModelAndStateManagementApi.ListDeviceRegistriesResponse();
+      //var instance = new OmniCoreModelAndStateManagementApi.ListDeviceRegistries();
       //expect(instance).to.be();
     });
 
     it('should have the property pageSize (base name: "pageSize")', function() {
       // uncomment below and update the code to test the property pageSize
-      //var instance = new OmniCoreModelAndStateManagementApi.ListDeviceRegistriesResponse();
+      //var instance = new OmniCoreModelAndStateManagementApi.ListDeviceRegistries();
       //expect(instance).to.be();
     });
 
     it('should have the property totalCount (base name: "totalCount")', function() {
       // uncomment below and update the code to test the property totalCount
-      //var instance = new OmniCoreModelAndStateManagementApi.ListDeviceRegistriesResponse();
+      //var instance = new OmniCoreModelAndStateManagementApi.ListDeviceRegistries();
       //expect(instance).to.be();
     });
 

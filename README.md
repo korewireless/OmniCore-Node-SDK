@@ -154,6 +154,8 @@ Class | Method | HTTP request | Description
  - [OmniCoreModelAndStateManagementApi.BindRequestIdsGateway](docs/BindRequestIdsGateway.md)
  - [OmniCoreModelAndStateManagementApi.BlockCommunicationBody](docs/BlockCommunicationBody.md)
  - [OmniCoreModelAndStateManagementApi.CreateNewDevice](docs/CreateNewDevice.md)
+ - [OmniCoreModelAndStateManagementApi.CreateRegistry200Response](docs/CreateRegistry200Response.md)
+ - [OmniCoreModelAndStateManagementApi.CreateRegistryRequest](docs/CreateRegistryRequest.md)
  - [OmniCoreModelAndStateManagementApi.Device](docs/Device.md)
  - [OmniCoreModelAndStateManagementApi.DeviceCertificate](docs/DeviceCertificate.md)
  - [OmniCoreModelAndStateManagementApi.DeviceCommand](docs/DeviceCommand.md)
@@ -170,7 +172,7 @@ Class | Method | HTTP request | Description
  - [OmniCoreModelAndStateManagementApi.HttpConfig](docs/HttpConfig.md)
  - [OmniCoreModelAndStateManagementApi.Info](docs/Info.md)
  - [OmniCoreModelAndStateManagementApi.ListDeviceConfigVersionsResponse](docs/ListDeviceConfigVersionsResponse.md)
- - [OmniCoreModelAndStateManagementApi.ListDeviceRegistriesResponse](docs/ListDeviceRegistriesResponse.md)
+ - [OmniCoreModelAndStateManagementApi.ListDeviceRegistries](docs/ListDeviceRegistries.md)
  - [OmniCoreModelAndStateManagementApi.ListDeviceStatesResponse](docs/ListDeviceStatesResponse.md)
  - [OmniCoreModelAndStateManagementApi.ListDevicesResponse](docs/ListDevicesResponse.md)
  - [OmniCoreModelAndStateManagementApi.LogLevel](docs/LogLevel.md)
@@ -183,6 +185,7 @@ Class | Method | HTTP request | Description
  - [OmniCoreModelAndStateManagementApi.RegistryCredential](docs/RegistryCredential.md)
  - [OmniCoreModelAndStateManagementApi.UpdateDevice](docs/UpdateDevice.md)
  - [OmniCoreModelAndStateManagementApi.UpdateRegistry](docs/UpdateRegistry.md)
+ - [OmniCoreModelAndStateManagementApi.UpdateRegistryRequest](docs/UpdateRegistryRequest.md)
  - [OmniCoreModelAndStateManagementApi.X509CertificateDetails](docs/X509CertificateDetails.md)
 
 
