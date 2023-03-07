@@ -18,19 +18,19 @@ import GatewayConfig from './GatewayConfig';
 import LogLevel from './LogLevel';
 
 /**
- * The NewDevice model module.
- * @module model/NewDevice
+ * The CreateNewDevice model module.
+ * @module model/CreateNewDevice
  * @version 1.0
  */
-class NewDevice {
+class CreateNewDevice {
     /**
-     * Constructs a new <code>NewDevice</code>.
-     * @alias module:model/NewDevice
+     * Constructs a new <code>CreateNewDevice</code>.
+     * @alias module:model/CreateNewDevice
      * @param id {String} 
      */
     constructor(id) { 
         
-        NewDevice.initialize(this, id);
+        CreateNewDevice.initialize(this, id);
     }
 
     /**
@@ -43,15 +43,15 @@ class NewDevice {
     }
 
     /**
-     * Constructs a <code>NewDevice</code> from a plain JavaScript object, optionally creating a new instance.
+     * Constructs a <code>CreateNewDevice</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/NewDevice} obj Optional instance to populate.
-     * @return {module:model/NewDevice} The populated <code>NewDevice</code> instance.
+     * @param {module:model/CreateNewDevice} obj Optional instance to populate.
+     * @return {module:model/CreateNewDevice} The populated <code>CreateNewDevice</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new NewDevice();
+            obj = obj || new CreateNewDevice();
 
             if (data.hasOwnProperty('id')) {
                 obj['id'] = ApiClient.convertToType(data['id'], 'String');
@@ -79,13 +79,13 @@ class NewDevice {
     }
 
     /**
-     * Validates the JSON data with respect to <code>NewDevice</code>.
+     * Validates the JSON data with respect to <code>CreateNewDevice</code>.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>NewDevice</code>.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>CreateNewDevice</code>.
      */
     static validateJSON(data) {
         // check to make sure all required properties are present in the JSON string
-        for (const property of NewDevice.RequiredProperties) {
+        for (const property of CreateNewDevice.RequiredProperties) {
             if (!data[property]) {
                 throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
             }
@@ -119,47 +119,47 @@ class NewDevice {
 
 }
 
-NewDevice.RequiredProperties = ["id"];
+CreateNewDevice.RequiredProperties = ["id"];
 
 /**
  * @member {String} id
  */
-NewDevice.prototype['id'] = undefined;
+CreateNewDevice.prototype['id'] = undefined;
 
 /**
  * @member {Boolean} blocked
  */
-NewDevice.prototype['blocked'] = undefined;
+CreateNewDevice.prototype['blocked'] = undefined;
 
 /**
  * @member {Array.<module:model/DeviceCredential>} credentials
  */
-NewDevice.prototype['credentials'] = undefined;
+CreateNewDevice.prototype['credentials'] = undefined;
 
 /**
  * @member {module:model/GatewayConfig} gatewayConfig
  */
-NewDevice.prototype['gatewayConfig'] = undefined;
+CreateNewDevice.prototype['gatewayConfig'] = undefined;
 
 /**
  * @member {module:model/DeviceConfig} config
  */
-NewDevice.prototype['config'] = undefined;
+CreateNewDevice.prototype['config'] = undefined;
 
 /**
  * @member {module:model/LogLevel} logLevel
  */
-NewDevice.prototype['logLevel'] = undefined;
+CreateNewDevice.prototype['logLevel'] = undefined;
 
 /**
  * @member {Object.<String, String>} metadata
  */
-NewDevice.prototype['metadata'] = undefined;
+CreateNewDevice.prototype['metadata'] = undefined;
 
 
 
 
 
 
-export default NewDevice;
+export default CreateNewDevice;
 

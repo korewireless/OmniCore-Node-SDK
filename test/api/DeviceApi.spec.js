@@ -148,16 +148,6 @@
         done();
       });
     });
-    describe('sendConfigurationToDevice', function() {
-      it('should call sendConfigurationToDevice successfully', function(done) {
-        //uncomment below and update the code to test sendConfigurationToDevice
-        //instance.sendConfigurationToDevice(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
     describe('unBindDevice', function() {
       it('should call unBindDevice successfully', function(done) {
         //uncomment below and update the code to test unBindDevice
@@ -172,6 +162,16 @@
       it('should call unBindDevices successfully', function(done) {
         //uncomment below and update the code to test unBindDevices
         //instance.unBindDevices(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('updateConfigurationToDevice', function() {
+      it('should call updateConfigurationToDevice successfully', function(done) {
+        //uncomment below and update the code to test updateConfigurationToDevice
+        //instance.updateConfigurationToDevice(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

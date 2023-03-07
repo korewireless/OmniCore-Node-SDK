@@ -1,4 +1,4 @@
-# OmniCoreModelAndStateManagementApi.NewDevice
+# OmniCoreModelAndStateManagementApi.CreateNewDevice
 
 ## Properties
 

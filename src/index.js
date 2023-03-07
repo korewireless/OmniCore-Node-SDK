@@ -16,6 +16,7 @@ import ApiClient from './ApiClient';
 import BindRequest from './model/BindRequest';
 import BindRequestIdsGateway from './model/BindRequestIdsGateway';
 import BlockCommunicationBody from './model/BlockCommunicationBody';
+import CreateNewDevice from './model/CreateNewDevice';
 import Device from './model/Device';
 import DeviceCertificate from './model/DeviceCertificate';
 import DeviceCommand from './model/DeviceCommand';
@@ -37,7 +38,6 @@ import ListDeviceStatesResponse from './model/ListDeviceStatesResponse';
 import ListDevicesResponse from './model/ListDevicesResponse';
 import LogLevel from './model/LogLevel';
 import MqttConfig from './model/MqttConfig';
-import NewDevice from './model/NewDevice';
 import NewRegistry from './model/NewRegistry';
 import NotificationConfig from './model/NotificationConfig';
 import PublicKeyCertificate from './model/PublicKeyCertificate';
@@ -106,6 +106,12 @@ export {
      * @property {module:model/BlockCommunicationBody}
      */
     BlockCommunicationBody,
+
+    /**
+     * The CreateNewDevice model constructor.
+     * @property {module:model/CreateNewDevice}
+     */
+    CreateNewDevice,
 
     /**
      * The Device model constructor.
@@ -232,12 +238,6 @@ export {
      * @property {module:model/MqttConfig}
      */
     MqttConfig,
-
-    /**
-     * The NewDevice model constructor.
-     * @property {module:model/NewDevice}
-     */
-    NewDevice,
 
     /**
      * The NewRegistry model constructor.

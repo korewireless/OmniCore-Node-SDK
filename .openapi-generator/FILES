@@ -6,6 +6,7 @@ README.md
 docs/BindRequest.md
 docs/BindRequestIdsGateway.md
 docs/BlockCommunicationBody.md
+docs/CreateNewDevice.md
 docs/Device.md
 docs/DeviceApi.md
 docs/DeviceCertificate.md
@@ -28,7 +29,6 @@ docs/ListDeviceStatesResponse.md
 docs/ListDevicesResponse.md
 docs/LogLevel.md
 docs/MqttConfig.md
-docs/NewDevice.md
 docs/NewRegistry.md
 docs/NotificationConfig.md
 docs/PublicKeyCertificate.md
@@ -49,6 +49,7 @@ src/index.js
 src/model/BindRequest.js
 src/model/BindRequestIdsGateway.js
 src/model/BlockCommunicationBody.js
+src/model/CreateNewDevice.js
 src/model/Device.js
 src/model/DeviceCertificate.js
 src/model/DeviceCommand.js
@@ -70,7 +71,6 @@ src/model/ListDeviceStatesResponse.js
 src/model/ListDevicesResponse.js
 src/model/LogLevel.js
 src/model/MqttConfig.js
-src/model/NewDevice.js
 src/model/NewRegistry.js
 src/model/NotificationConfig.js
 src/model/PublicKeyCertificate.js
@@ -85,6 +85,7 @@ test/api/RegistryApi.spec.js
 test/model/BindRequest.spec.js
 test/model/BindRequestIdsGateway.spec.js
 test/model/BlockCommunicationBody.spec.js
+test/model/CreateNewDevice.spec.js
 test/model/Device.spec.js
 test/model/DeviceCertificate.spec.js
 test/model/DeviceCommand.spec.js
@@ -106,7 +107,6 @@ test/model/ListDeviceStatesResponse.spec.js
 test/model/ListDevicesResponse.spec.js
 test/model/LogLevel.spec.js
 test/model/MqttConfig.spec.js
-test/model/NewDevice.spec.js
 test/model/NewRegistry.spec.js
 test/model/NotificationConfig.spec.js
 test/model/PublicKeyCertificate.spec.js

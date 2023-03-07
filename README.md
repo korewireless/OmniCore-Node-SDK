@@ -125,27 +125,27 @@ api.bindDevice(subscriptionId, registryId, device, callback);
 
 All URIs are relative to *https://demo-api.omnicore.cloud.korewireless.com/model-state-management*
 
-| Class                                            | Method                                                                       | HTTP request                                                                                                  | Description |
-| ------------------------------------------------ | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ----------- |
-| *OmniCoreModelAndStateManagementApi.DeviceApi*   | [**bindDevice**](docs/DeviceApi.md#bindDevice)                               | **POST** /subscriptions/{subscriptionId}/registries/{registryId}/bindDeviceToGateway                          |
-| *OmniCoreModelAndStateManagementApi.DeviceApi*   | [**bindDevices**](docs/DeviceApi.md#bindDevices)                             | **POST** /subscriptions/{subscriptionId}/registries/{registryId}/bindDevicesToGateway                         |
-| *OmniCoreModelAndStateManagementApi.DeviceApi*   | [**blockDeviceCommuncation**](docs/DeviceApi.md#blockDeviceCommuncation)     | **PUT** /subscriptions/{subscriptionid}/registries/{registryId}/devices/{deviceId}/communication              |
-| *OmniCoreModelAndStateManagementApi.DeviceApi*   | [**createDevice**](docs/DeviceApi.md#createDevice)                           | **POST** /subscriptions/{subscriptionId}/registries/{registryId}/devices                                      |
-| *OmniCoreModelAndStateManagementApi.DeviceApi*   | [**deleteDevice**](docs/DeviceApi.md#deleteDevice)                           | **DELETE** /subscriptions/{subscriptionId}/registries/{registryId}/devices/{deviceId}                         |
-| *OmniCoreModelAndStateManagementApi.DeviceApi*   | [**getConfig**](docs/DeviceApi.md#getConfig)                                 | **GET** /subscriptions/{subscriptionid}/registries/{registryId}/devices/{deviceId}/configVersions             |
-| *OmniCoreModelAndStateManagementApi.DeviceApi*   | [**getDevice**](docs/DeviceApi.md#getDevice)                                 | **GET** /subscriptions/{subscriptionId}/registries/{registryId}/devices/{deviceId}                            |
-| *OmniCoreModelAndStateManagementApi.DeviceApi*   | [**getDevices**](docs/DeviceApi.md#getDevices)                               | **GET** /subscriptions/{subscriptionId}/registries/{registryId}/devices                                       |
-| *OmniCoreModelAndStateManagementApi.DeviceApi*   | [**getStates**](docs/DeviceApi.md#getStates)                                 | **GET** /subscriptions/{subscriptionid}/registries/{registryId}/devices/{deviceId}/states                     |
-| *OmniCoreModelAndStateManagementApi.DeviceApi*   | [**sendCommandToDevice**](docs/DeviceApi.md#sendCommandToDevice)             | **POST** /subscriptions/{subscriptionid}/registries/{registryId}/devices/{deviceId}/sendCommandToDevice       |
-| *OmniCoreModelAndStateManagementApi.DeviceApi*   | [**sendConfigurationToDevice**](docs/DeviceApi.md#sendConfigurationToDevice) | **POST** /subscriptions/{subscriptionid}/registries/{registryId}/devices/{deviceId}/sendConfigurationToDevice |
-| *OmniCoreModelAndStateManagementApi.DeviceApi*   | [**unBindDevice**](docs/DeviceApi.md#unBindDevice)                           | **POST** /subscriptions/{subscriptionId}/registries/{registryId}/unbindDeviceFromGateway                      |
-| *OmniCoreModelAndStateManagementApi.DeviceApi*   | [**unBindDevices**](docs/DeviceApi.md#unBindDevices)                         | **POST** /subscriptions/{subscriptionId}/registries/{registryId}/unbindDevicesFromGateway                     |
-| *OmniCoreModelAndStateManagementApi.DeviceApi*   | [**updateDevice**](docs/DeviceApi.md#updateDevice)                           | **PATCH** /subscriptions/{subscriptionId}/registries/{registryId}/devices/{deviceId}                          |
-| *OmniCoreModelAndStateManagementApi.RegistryApi* | [**createRegistry**](docs/RegistryApi.md#createRegistry)                     | **POST** /subscriptions/{subscriptionId}/registries                                                           |
-| *OmniCoreModelAndStateManagementApi.RegistryApi* | [**deleteRegistry**](docs/RegistryApi.md#deleteRegistry)                     | **DELETE** /subscriptions/{subscriptionId}/registries/{registryId}                                            |
-| *OmniCoreModelAndStateManagementApi.RegistryApi* | [**getRegistries**](docs/RegistryApi.md#getRegistries)                       | **GET** /subscriptions/{subscriptionId}/registries                                                            |
-| *OmniCoreModelAndStateManagementApi.RegistryApi* | [**getRegistry**](docs/RegistryApi.md#getRegistry)                           | **GET** /subscriptions/{subscriptionId}/registries/{registryId}                                               |
-| *OmniCoreModelAndStateManagementApi.RegistryApi* | [**updateRegistry**](docs/RegistryApi.md#updateRegistry)                     | **PATCH** /subscriptions/{subscriptionId}/registries/{registryId}                                             |
+Class | Method | HTTP request | Description
+------------ | ------------- | ------------- | -------------
+*OmniCoreModelAndStateManagementApi.DeviceApi* | [**bindDevice**](docs/DeviceApi.md#bindDevice) | **POST** /subscriptions/{subscriptionId}/registries/{registryId}/bindDeviceToGateway | 
+*OmniCoreModelAndStateManagementApi.DeviceApi* | [**bindDevices**](docs/DeviceApi.md#bindDevices) | **POST** /subscriptions/{subscriptionId}/registries/{registryId}/bindDevicesToGateway | 
+*OmniCoreModelAndStateManagementApi.DeviceApi* | [**blockDeviceCommuncation**](docs/DeviceApi.md#blockDeviceCommuncation) | **PUT** /subscriptions/{subscriptionid}/registries/{registryId}/devices/{deviceId}/communication | 
+*OmniCoreModelAndStateManagementApi.DeviceApi* | [**createDevice**](docs/DeviceApi.md#createDevice) | **POST** /subscriptions/{subscriptionId}/registries/{registryId}/devices | 
+*OmniCoreModelAndStateManagementApi.DeviceApi* | [**deleteDevice**](docs/DeviceApi.md#deleteDevice) | **DELETE** /subscriptions/{subscriptionId}/registries/{registryId}/devices/{deviceId} | 
+*OmniCoreModelAndStateManagementApi.DeviceApi* | [**getConfig**](docs/DeviceApi.md#getConfig) | **GET** /subscriptions/{subscriptionid}/registries/{registryId}/devices/{deviceId}/configVersions | 
+*OmniCoreModelAndStateManagementApi.DeviceApi* | [**getDevice**](docs/DeviceApi.md#getDevice) | **GET** /subscriptions/{subscriptionId}/registries/{registryId}/devices/{deviceId} | 
+*OmniCoreModelAndStateManagementApi.DeviceApi* | [**getDevices**](docs/DeviceApi.md#getDevices) | **GET** /subscriptions/{subscriptionId}/registries/{registryId}/devices | 
+*OmniCoreModelAndStateManagementApi.DeviceApi* | [**getStates**](docs/DeviceApi.md#getStates) | **GET** /subscriptions/{subscriptionid}/registries/{registryId}/devices/{deviceId}/states | 
+*OmniCoreModelAndStateManagementApi.DeviceApi* | [**sendCommandToDevice**](docs/DeviceApi.md#sendCommandToDevice) | **POST** /subscriptions/{subscriptionid}/registries/{registryId}/devices/{deviceId}/sendCommandToDevice | 
+*OmniCoreModelAndStateManagementApi.DeviceApi* | [**unBindDevice**](docs/DeviceApi.md#unBindDevice) | **POST** /subscriptions/{subscriptionId}/registries/{registryId}/unbindDeviceFromGateway | 
+*OmniCoreModelAndStateManagementApi.DeviceApi* | [**unBindDevices**](docs/DeviceApi.md#unBindDevices) | **POST** /subscriptions/{subscriptionId}/registries/{registryId}/unbindDevicesFromGateway | 
+*OmniCoreModelAndStateManagementApi.DeviceApi* | [**updateConfigurationToDevice**](docs/DeviceApi.md#updateConfigurationToDevice) | **POST** /subscriptions/{subscriptionid}/registries/{registryId}/devices/{deviceId}/updateConfigurationToDevice | 
+*OmniCoreModelAndStateManagementApi.DeviceApi* | [**updateDevice**](docs/DeviceApi.md#updateDevice) | **PATCH** /subscriptions/{subscriptionId}/registries/{registryId}/devices/{deviceId} | 
+*OmniCoreModelAndStateManagementApi.RegistryApi* | [**createRegistry**](docs/RegistryApi.md#createRegistry) | **POST** /subscriptions/{subscriptionId}/registries | 
+*OmniCoreModelAndStateManagementApi.RegistryApi* | [**deleteRegistry**](docs/RegistryApi.md#deleteRegistry) | **DELETE** /subscriptions/{subscriptionId}/registries/{registryId} | 
+*OmniCoreModelAndStateManagementApi.RegistryApi* | [**getRegistries**](docs/RegistryApi.md#getRegistries) | **GET** /subscriptions/{subscriptionId}/registries | 
+*OmniCoreModelAndStateManagementApi.RegistryApi* | [**getRegistry**](docs/RegistryApi.md#getRegistry) | **GET** /subscriptions/{subscriptionId}/registries/{registryId} | 
+*OmniCoreModelAndStateManagementApi.RegistryApi* | [**updateRegistry**](docs/RegistryApi.md#updateRegistry) | **PATCH** /subscriptions/{subscriptionId}/registries/{registryId} | 
 
 
 ## Documentation for Models
@@ -153,6 +153,7 @@ All URIs are relative to *https://demo-api.omnicore.cloud.korewireless.com/model
  - [OmniCoreModelAndStateManagementApi.BindRequest](docs/BindRequest.md)
  - [OmniCoreModelAndStateManagementApi.BindRequestIdsGateway](docs/BindRequestIdsGateway.md)
  - [OmniCoreModelAndStateManagementApi.BlockCommunicationBody](docs/BlockCommunicationBody.md)
+ - [OmniCoreModelAndStateManagementApi.CreateNewDevice](docs/CreateNewDevice.md)
  - [OmniCoreModelAndStateManagementApi.Device](docs/Device.md)
  - [OmniCoreModelAndStateManagementApi.DeviceCertificate](docs/DeviceCertificate.md)
  - [OmniCoreModelAndStateManagementApi.DeviceCommand](docs/DeviceCommand.md)
@@ -174,7 +175,6 @@ All URIs are relative to *https://demo-api.omnicore.cloud.korewireless.com/model
  - [OmniCoreModelAndStateManagementApi.ListDevicesResponse](docs/ListDevicesResponse.md)
  - [OmniCoreModelAndStateManagementApi.LogLevel](docs/LogLevel.md)
  - [OmniCoreModelAndStateManagementApi.MqttConfig](docs/MqttConfig.md)
- - [OmniCoreModelAndStateManagementApi.NewDevice](docs/NewDevice.md)
  - [OmniCoreModelAndStateManagementApi.NewRegistry](docs/NewRegistry.md)
  - [OmniCoreModelAndStateManagementApi.NotificationConfig](docs/NotificationConfig.md)
  - [OmniCoreModelAndStateManagementApi.PublicKeyCertificate](docs/PublicKeyCertificate.md)

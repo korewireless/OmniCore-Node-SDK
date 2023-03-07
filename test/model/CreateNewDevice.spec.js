@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new OmniCoreModelAndStateManagementApi.NewDevice();
+    instance = new OmniCoreModelAndStateManagementApi.CreateNewDevice();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,52 +47,52 @@
       object[property] = value;
   }
 
-  describe('NewDevice', function() {
-    it('should create an instance of NewDevice', function() {
-      // uncomment below and update the code to test NewDevice
-      //var instance = new OmniCoreModelAndStateManagementApi.NewDevice();
-      //expect(instance).to.be.a(OmniCoreModelAndStateManagementApi.NewDevice);
+  describe('CreateNewDevice', function() {
+    it('should create an instance of CreateNewDevice', function() {
+      // uncomment below and update the code to test CreateNewDevice
+      //var instance = new OmniCoreModelAndStateManagementApi.CreateNewDevice();
+      //expect(instance).to.be.a(OmniCoreModelAndStateManagementApi.CreateNewDevice);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new OmniCoreModelAndStateManagementApi.NewDevice();
+      //var instance = new OmniCoreModelAndStateManagementApi.CreateNewDevice();
       //expect(instance).to.be();
     });
 
     it('should have the property blocked (base name: "blocked")', function() {
       // uncomment below and update the code to test the property blocked
-      //var instance = new OmniCoreModelAndStateManagementApi.NewDevice();
+      //var instance = new OmniCoreModelAndStateManagementApi.CreateNewDevice();
       //expect(instance).to.be();
     });
 
     it('should have the property credentials (base name: "credentials")', function() {
       // uncomment below and update the code to test the property credentials
-      //var instance = new OmniCoreModelAndStateManagementApi.NewDevice();
+      //var instance = new OmniCoreModelAndStateManagementApi.CreateNewDevice();
       //expect(instance).to.be();
     });
 
     it('should have the property gatewayConfig (base name: "gatewayConfig")', function() {
       // uncomment below and update the code to test the property gatewayConfig
-      //var instance = new OmniCoreModelAndStateManagementApi.NewDevice();
+      //var instance = new OmniCoreModelAndStateManagementApi.CreateNewDevice();
       //expect(instance).to.be();
     });
 
     it('should have the property config (base name: "config")', function() {
       // uncomment below and update the code to test the property config
-      //var instance = new OmniCoreModelAndStateManagementApi.NewDevice();
+      //var instance = new OmniCoreModelAndStateManagementApi.CreateNewDevice();
       //expect(instance).to.be();
     });
 
     it('should have the property logLevel (base name: "logLevel")', function() {
       // uncomment below and update the code to test the property logLevel
-      //var instance = new OmniCoreModelAndStateManagementApi.NewDevice();
+      //var instance = new OmniCoreModelAndStateManagementApi.CreateNewDevice();
       //expect(instance).to.be();
     });
 
     it('should have the property metadata (base name: "metadata")', function() {
       // uncomment below and update the code to test the property metadata
-      //var instance = new OmniCoreModelAndStateManagementApi.NewDevice();
+      //var instance = new OmniCoreModelAndStateManagementApi.CreateNewDevice();
       //expect(instance).to.be();
     });
 
