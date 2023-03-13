@@ -29,11 +29,10 @@ class DeviceRegistry {
      * Constructs a new <code>DeviceRegistry</code>.
      * @alias module:model/DeviceRegistry
      * @param id {String} 
-     * @param parent {String} 
      */
-    constructor(id, parent) { 
+    constructor(id) { 
         
-        DeviceRegistry.initialize(this, id, parent);
+        DeviceRegistry.initialize(this, id);
     }
 
     /**
@@ -41,9 +40,8 @@ class DeviceRegistry {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, id, parent) { 
+    static initialize(obj, id) { 
         obj['id'] = id;
-        obj['parent'] = parent;
     }
 
     /**
@@ -178,7 +176,7 @@ class DeviceRegistry {
 
 }
 
-DeviceRegistry.RequiredProperties = ["id", "parent"];
+DeviceRegistry.RequiredProperties = ["id"];
 
 /**
  * @member {String} id

@@ -16,7 +16,6 @@ import ApiClient from "../ApiClient";
 import BindRequest from '../model/BindRequest';
 import BindRequestIdsGateway from '../model/BindRequestIdsGateway';
 import BlockCommunicationBody from '../model/BlockCommunicationBody';
-import CreateNewDevice from '../model/CreateNewDevice';
 import Device from '../model/Device';
 import DeviceCommand from '../model/DeviceCommand';
 import DeviceConfig from '../model/DeviceConfig';
@@ -26,7 +25,6 @@ import Info from '../model/Info';
 import ListDeviceConfigVersionsResponse from '../model/ListDeviceConfigVersionsResponse';
 import ListDeviceStatesResponse from '../model/ListDeviceStatesResponse';
 import ListDevicesResponse from '../model/ListDevicesResponse';
-import UpdateDevice from '../model/UpdateDevice';
 
 /**
 * Device service.
@@ -224,7 +222,7 @@ export default class DeviceApi {
      * Create a device under a registry
      * @param {String} subscriptionId Subscription ID
      * @param {String} registryId Registry ID
-     * @param {module:model/CreateNewDevice} device application/json
+     * @param {module:model/Device} device application/json
      * @param {module:api/DeviceApi~createDeviceCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/Device}
      */
@@ -794,8 +792,8 @@ export default class DeviceApi {
      * @param {String} subscriptionId Subscription ID
      * @param {String} registryId Registry ID
      * @param {String} deviceId Device ID
-     * @param {module:model/String} updateMask Required. Only updates the device fields indicated by this mask. The field mask must not be empty, and it must not contain fields that are immutable or only set by the server. Mutable top-level fields: credentials,log_level, blocked, and metadata
-     * @param {module:model/UpdateDevice} device application/json
+     * @param {module:model/String} updateMask Required. Only updates the device fields indicated by this mask. The field mask must not be empty, and it must not contain fields that are immutable or only set by the server. Mutable top-level fields: credentials,logLevel, blocked, and metadata
+     * @param {module:model/Device} device application/json
      * @param {module:api/DeviceApi~updateDeviceCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/Device}
      */

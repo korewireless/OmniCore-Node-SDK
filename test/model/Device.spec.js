@@ -216,12 +216,6 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property subscriptions (base name: "subscriptions")', function() {
-      // uncomment below and update the code to test the property subscriptions
-      //var instance = new OmniCoreModelAndStateManagementApi.Device();
-      //expect(instance).to.be();
-    });
-
   });
 
 }));

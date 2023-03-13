@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 ## createRegistry
 
-> CreateRegistry200Response createRegistry(subscriptionId, opts)
+> DeviceRegistry createRegistry(subscriptionId, opts)
 
 
 
@@ -32,7 +32,7 @@ bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 let apiInstance = new OmniCoreModelAndStateManagementApi.RegistryApi();
 let subscriptionId = "subscriptionId_example"; // String | Subscription ID
 let opts = {
-  'registry': new OmniCoreModelAndStateManagementApi.CreateRegistryRequest() // CreateRegistryRequest | application/json
+  'registry': new OmniCoreModelAndStateManagementApi.DeviceRegistry() // DeviceRegistry | application/json
 };
 apiInstance.createRegistry(subscriptionId, opts, (error, data, response) => {
   if (error) {
@@ -49,11 +49,11 @@ apiInstance.createRegistry(subscriptionId, opts, (error, data, response) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **subscriptionId** | **String**| Subscription ID | 
- **registry** | [**CreateRegistryRequest**](CreateRegistryRequest.md)| application/json | [optional] 
+ **registry** | [**DeviceRegistry**](DeviceRegistry.md)| application/json | [optional] 
 
 ### Return type
 
-[**CreateRegistry200Response**](CreateRegistry200Response.md)
+[**DeviceRegistry**](DeviceRegistry.md)
 
 ### Authorization
 
@@ -224,7 +224,7 @@ Name | Type | Description  | Notes
 
 ## updateRegistry
 
-> CreateRegistry200Response updateRegistry(subscriptionId, registryId, updateMask, opts)
+> DeviceRegistry updateRegistry(subscriptionId, registryId, updateMask, opts)
 
 
 
@@ -244,7 +244,7 @@ let subscriptionId = "subscriptionId_example"; // String | Subscription ID
 let registryId = "registryId_example"; // String | Registry ID
 let updateMask = "updateMask_example"; // String | values to be updated: eventNotificationConfigs,stateNotificationConfig.pubsub_topic_name,logNotificationConfig.pubsub_topic_name,mqttConfig.mqtt_enabled_state,httpConfig.http_enabled_state,logLevel,credentials
 let opts = {
-  'registry': new OmniCoreModelAndStateManagementApi.UpdateRegistryRequest() // UpdateRegistryRequest | application/json
+  'registry': new OmniCoreModelAndStateManagementApi.DeviceRegistry() // DeviceRegistry | application/json
 };
 apiInstance.updateRegistry(subscriptionId, registryId, updateMask, opts, (error, data, response) => {
   if (error) {
@@ -263,11 +263,11 @@ Name | Type | Description  | Notes
  **subscriptionId** | **String**| Subscription ID | 
  **registryId** | **String**| Registry ID | 
  **updateMask** | **String**| values to be updated: eventNotificationConfigs,stateNotificationConfig.pubsub_topic_name,logNotificationConfig.pubsub_topic_name,mqttConfig.mqtt_enabled_state,httpConfig.http_enabled_state,logLevel,credentials | 
- **registry** | [**UpdateRegistryRequest**](UpdateRegistryRequest.md)| application/json | [optional] 
+ **registry** | [**DeviceRegistry**](DeviceRegistry.md)| application/json | [optional] 
 
 ### Return type
 
-[**CreateRegistry200Response**](CreateRegistry200Response.md)
+[**DeviceRegistry**](DeviceRegistry.md)
 
 ### Authorization
 

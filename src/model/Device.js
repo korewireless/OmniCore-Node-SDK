@@ -29,13 +29,10 @@ class Device {
      * Constructs a new <code>Device</code>.
      * @alias module:model/Device
      * @param id {String} 
-     * @param parent {String} 
-     * @param registry {String} 
-     * @param subscription {String} 
      */
-    constructor(id, parent, registry, subscription) { 
+    constructor(id) { 
         
-        Device.initialize(this, id, parent, registry, subscription);
+        Device.initialize(this, id);
     }
 
     /**
@@ -43,11 +40,8 @@ class Device {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, id, parent, registry, subscription) { 
+    static initialize(obj, id) { 
         obj['id'] = id;
-        obj['parent'] = parent;
-        obj['registry'] = registry;
-        obj['subscription'] = subscription;
     }
 
     /**
@@ -141,9 +135,6 @@ class Device {
             }
             if (data.hasOwnProperty('state')) {
                 obj['state'] = DeviceState.constructFromObject(data['state']);
-            }
-            if (data.hasOwnProperty('subscriptions')) {
-                obj['subscriptions'] = ApiClient.convertToType(data['subscriptions'], ['String']);
             }
         }
         return obj;
@@ -251,10 +242,6 @@ class Device {
         if (data['state']) { // data not null
           DeviceState.validateJSON(data['state']);
         }
-        // ensure the json data is an array
-        if (!Array.isArray(data['subscriptions'])) {
-            throw new Error("Expected the field `subscriptions` to be an array in the JSON data but got " + data['subscriptions']);
-        }
 
         return true;
     }
@@ -262,7 +249,7 @@ class Device {
 
 }
 
-Device.RequiredProperties = ["id", "parent", "registry", "subscription"];
+Device.RequiredProperties = ["id"];
 
 /**
  * @member {String} id
@@ -398,11 +385,6 @@ Device.prototype['config'] = undefined;
  * @member {module:model/DeviceState} state
  */
 Device.prototype['state'] = undefined;
-
-/**
- * @member {Array.<String>} subscriptions
- */
-Device.prototype['subscriptions'] = undefined;
 
 
 

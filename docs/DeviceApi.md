@@ -202,7 +202,7 @@ bearerAuth.accessToken = "YOUR ACCESS TOKEN"
 let apiInstance = new OmniCoreModelAndStateManagementApi.DeviceApi();
 let subscriptionId = "subscriptionId_example"; // String | Subscription ID
 let registryId = "registryId_example"; // String | Registry ID
-let device = new OmniCoreModelAndStateManagementApi.CreateNewDevice(); // CreateNewDevice | application/json
+let device = new OmniCoreModelAndStateManagementApi.Device(); // Device | application/json
 apiInstance.createDevice(subscriptionId, registryId, device, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -219,7 +219,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **subscriptionId** | **String**| Subscription ID | 
  **registryId** | **String**| Registry ID | 
- **device** | [**CreateNewDevice**](CreateNewDevice.md)| application/json | 
+ **device** | [**Device**](Device.md)| application/json | 
 
 ### Return type
 
@@ -759,8 +759,8 @@ let apiInstance = new OmniCoreModelAndStateManagementApi.DeviceApi();
 let subscriptionId = "subscriptionId_example"; // String | Subscription ID
 let registryId = "registryId_example"; // String | Registry ID
 let deviceId = "deviceId_example"; // String | Device ID
-let updateMask = "updateMask_example"; // String | Required. Only updates the device fields indicated by this mask. The field mask must not be empty, and it must not contain fields that are immutable or only set by the server. Mutable top-level fields: credentials,log_level, blocked, and metadata
-let device = new OmniCoreModelAndStateManagementApi.UpdateDevice(); // UpdateDevice | application/json
+let updateMask = "updateMask_example"; // String | Required. Only updates the device fields indicated by this mask. The field mask must not be empty, and it must not contain fields that are immutable or only set by the server. Mutable top-level fields: credentials,logLevel, blocked, and metadata
+let device = new OmniCoreModelAndStateManagementApi.Device(); // Device | application/json
 apiInstance.updateDevice(subscriptionId, registryId, deviceId, updateMask, device, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -778,8 +778,8 @@ Name | Type | Description  | Notes
  **subscriptionId** | **String**| Subscription ID | 
  **registryId** | **String**| Registry ID | 
  **deviceId** | **String**| Device ID | 
- **updateMask** | **String**| Required. Only updates the device fields indicated by this mask. The field mask must not be empty, and it must not contain fields that are immutable or only set by the server. Mutable top-level fields: credentials,log_level, blocked, and metadata | 
- **device** | [**UpdateDevice**](UpdateDevice.md)| application/json | 
+ **updateMask** | **String**| Required. Only updates the device fields indicated by this mask. The field mask must not be empty, and it must not contain fields that are immutable or only set by the server. Mutable top-level fields: credentials,logLevel, blocked, and metadata | 
+ **device** | [**Device**](Device.md)| application/json | 
 
 ### Return type
 

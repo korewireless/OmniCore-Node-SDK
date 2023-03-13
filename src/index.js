@@ -16,9 +16,6 @@ import ApiClient from './ApiClient';
 import BindRequest from './model/BindRequest';
 import BindRequestIdsGateway from './model/BindRequestIdsGateway';
 import BlockCommunicationBody from './model/BlockCommunicationBody';
-import CreateNewDevice from './model/CreateNewDevice';
-import CreateRegistry200Response from './model/CreateRegistry200Response';
-import CreateRegistryRequest from './model/CreateRegistryRequest';
 import Device from './model/Device';
 import DeviceCertificate from './model/DeviceCertificate';
 import DeviceCommand from './model/DeviceCommand';
@@ -40,15 +37,11 @@ import ListDeviceStatesResponse from './model/ListDeviceStatesResponse';
 import ListDevicesResponse from './model/ListDevicesResponse';
 import LogLevel from './model/LogLevel';
 import MqttConfig from './model/MqttConfig';
-import NewRegistry from './model/NewRegistry';
 import NotificationConfig from './model/NotificationConfig';
 import PublicKeyCertificate from './model/PublicKeyCertificate';
 import PublicKeyCredential from './model/PublicKeyCredential';
 import RegistryCertificate from './model/RegistryCertificate';
 import RegistryCredential from './model/RegistryCredential';
-import UpdateDevice from './model/UpdateDevice';
-import UpdateRegistry from './model/UpdateRegistry';
-import UpdateRegistryRequest from './model/UpdateRegistryRequest';
 import X509CertificateDetails from './model/X509CertificateDetails';
 import DeviceApi from './api/DeviceApi';
 import RegistryApi from './api/RegistryApi';
@@ -109,24 +102,6 @@ export {
      * @property {module:model/BlockCommunicationBody}
      */
     BlockCommunicationBody,
-
-    /**
-     * The CreateNewDevice model constructor.
-     * @property {module:model/CreateNewDevice}
-     */
-    CreateNewDevice,
-
-    /**
-     * The CreateRegistry200Response model constructor.
-     * @property {module:model/CreateRegistry200Response}
-     */
-    CreateRegistry200Response,
-
-    /**
-     * The CreateRegistryRequest model constructor.
-     * @property {module:model/CreateRegistryRequest}
-     */
-    CreateRegistryRequest,
 
     /**
      * The Device model constructor.
@@ -255,12 +230,6 @@ export {
     MqttConfig,
 
     /**
-     * The NewRegistry model constructor.
-     * @property {module:model/NewRegistry}
-     */
-    NewRegistry,
-
-    /**
      * The NotificationConfig model constructor.
      * @property {module:model/NotificationConfig}
      */
@@ -289,24 +258,6 @@ export {
      * @property {module:model/RegistryCredential}
      */
     RegistryCredential,
-
-    /**
-     * The UpdateDevice model constructor.
-     * @property {module:model/UpdateDevice}
-     */
-    UpdateDevice,
-
-    /**
-     * The UpdateRegistry model constructor.
-     * @property {module:model/UpdateRegistry}
-     */
-    UpdateRegistry,
-
-    /**
-     * The UpdateRegistryRequest model constructor.
-     * @property {module:model/UpdateRegistryRequest}
-     */
-    UpdateRegistryRequest,
 
     /**
      * The X509CertificateDetails model constructor.

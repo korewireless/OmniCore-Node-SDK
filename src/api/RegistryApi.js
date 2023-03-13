@@ -13,13 +13,10 @@
 
 
 import ApiClient from "../ApiClient";
-import CreateRegistry200Response from '../model/CreateRegistry200Response';
-import CreateRegistryRequest from '../model/CreateRegistryRequest';
 import DeviceRegistry from '../model/DeviceRegistry';
 import GenericErrorResponse from '../model/GenericErrorResponse';
 import Info from '../model/Info';
 import ListDeviceRegistries from '../model/ListDeviceRegistries';
-import UpdateRegistryRequest from '../model/UpdateRegistryRequest';
 
 /**
 * Registry service.
@@ -44,7 +41,7 @@ export default class RegistryApi {
      * Callback function to receive the result of the createRegistry operation.
      * @callback module:api/RegistryApi~createRegistryCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/CreateRegistry200Response} data The data returned by the service call.
+     * @param {module:model/DeviceRegistry} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -52,9 +49,9 @@ export default class RegistryApi {
      * Create a registry
      * @param {String} subscriptionId Subscription ID
      * @param {Object} opts Optional parameters
-     * @param {module:model/CreateRegistryRequest} opts.registry application/json
+     * @param {module:model/DeviceRegistry} opts.registry application/json
      * @param {module:api/RegistryApi~createRegistryCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/CreateRegistry200Response}
+     * data is of type: {@link module:model/DeviceRegistry}
      */
     createRegistry(subscriptionId, opts, callback) {
       opts = opts || {};
@@ -77,7 +74,7 @@ export default class RegistryApi {
       let authNames = ['bearerAuth'];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
-      let returnType = CreateRegistry200Response;
+      let returnType = DeviceRegistry;
       return this.apiClient.callApi(
         '/subscriptions/{subscriptionId}/registries', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -233,7 +230,7 @@ export default class RegistryApi {
      * Callback function to receive the result of the updateRegistry operation.
      * @callback module:api/RegistryApi~updateRegistryCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/CreateRegistry200Response} data The data returned by the service call.
+     * @param {module:model/DeviceRegistry} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -243,9 +240,9 @@ export default class RegistryApi {
      * @param {String} registryId Registry ID
      * @param {module:model/String} updateMask values to be updated: eventNotificationConfigs,stateNotificationConfig.pubsub_topic_name,logNotificationConfig.pubsub_topic_name,mqttConfig.mqtt_enabled_state,httpConfig.http_enabled_state,logLevel,credentials
      * @param {Object} opts Optional parameters
-     * @param {module:model/UpdateRegistryRequest} opts.registry application/json
+     * @param {module:model/DeviceRegistry} opts.registry application/json
      * @param {module:api/RegistryApi~updateRegistryCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/CreateRegistry200Response}
+     * data is of type: {@link module:model/DeviceRegistry}
      */
     updateRegistry(subscriptionId, registryId, updateMask, opts, callback) {
       opts = opts || {};
@@ -278,7 +275,7 @@ export default class RegistryApi {
       let authNames = ['bearerAuth'];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
-      let returnType = CreateRegistry200Response;
+      let returnType = DeviceRegistry;
       return this.apiClient.callApi(
         '/subscriptions/{subscriptionId}/registries/{registryId}', 'PATCH',
         pathParams, queryParams, headerParams, formParams, postBody,
