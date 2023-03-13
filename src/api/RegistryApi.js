@@ -71,7 +71,7 @@ export default class RegistryApi {
       let formParams = {
       };
 
-      let authNames = ['bearerAuth'];
+      let authNames = ['apiKey', 'bearerAuth'];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
       let returnType = DeviceRegistry;
@@ -119,7 +119,7 @@ export default class RegistryApi {
       let formParams = {
       };
 
-      let authNames = ['bearerAuth'];
+      let authNames = ['apiKey', 'bearerAuth'];
       let contentTypes = [];
       let accepts = ['application/json'];
       let returnType = Info;
@@ -167,7 +167,7 @@ export default class RegistryApi {
       let formParams = {
       };
 
-      let authNames = ['bearerAuth'];
+      let authNames = ['apiKey', 'bearerAuth'];
       let contentTypes = [];
       let accepts = ['application/json'];
       let returnType = ListDeviceRegistries;
@@ -215,7 +215,7 @@ export default class RegistryApi {
       let formParams = {
       };
 
-      let authNames = ['bearerAuth'];
+      let authNames = ['apiKey', 'bearerAuth'];
       let contentTypes = [];
       let accepts = ['application/json'];
       let returnType = DeviceRegistry;
@@ -272,7 +272,7 @@ export default class RegistryApi {
       let formParams = {
       };
 
-      let authNames = ['bearerAuth'];
+      let authNames = ['apiKey', 'bearerAuth'];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
       let returnType = DeviceRegistry;

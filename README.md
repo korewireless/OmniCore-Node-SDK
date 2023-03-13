@@ -102,6 +102,11 @@ Please follow the [installation](#installation) instruction and execute the foll
 var OmniCoreModelAndStateManagementApi = require('omni_core_model_and_state_management_api');
 
 var defaultClient = OmniCoreModelAndStateManagementApi.ApiClient.instance;
+// Configure API key authorization: apiKey
+var apiKey = defaultClient.authentications['apiKey'];
+apiKey.apiKey = "YOUR API KEY"
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//apiKey.apiKeyPrefix['x-api-key'] = "Token"
 // Configure Bearer (JWT) access token for authorization: bearerAuth
 var bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
@@ -187,4 +192,13 @@ Class | Method | HTTP request | Description
 ### bearerAuth
 
 - **Type**: Bearer authentication (JWT)
+
+
+
+### apiKey
+
+
+- **Type**: API key
+- **API key parameter name**: x-api-key
+- **Location**: HTTP header
 

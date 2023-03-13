@@ -25,6 +25,11 @@ Create a registry
 ```javascript
 import OmniCoreModelAndStateManagementApi from 'omni_core_model_and_state_management_api';
 let defaultClient = OmniCoreModelAndStateManagementApi.ApiClient.instance;
+// Configure API key authorization: apiKey
+let apiKey = defaultClient.authentications['apiKey'];
+apiKey.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//apiKey.apiKeyPrefix = 'Token';
 // Configure Bearer (JWT) access token for authorization: bearerAuth
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
@@ -57,7 +62,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[apiKey](../README.md#apiKey), [bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 
@@ -78,6 +83,11 @@ Delete a registry
 ```javascript
 import OmniCoreModelAndStateManagementApi from 'omni_core_model_and_state_management_api';
 let defaultClient = OmniCoreModelAndStateManagementApi.ApiClient.instance;
+// Configure API key authorization: apiKey
+let apiKey = defaultClient.authentications['apiKey'];
+apiKey.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//apiKey.apiKeyPrefix = 'Token';
 // Configure Bearer (JWT) access token for authorization: bearerAuth
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
@@ -108,7 +118,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[apiKey](../README.md#apiKey), [bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 
@@ -129,6 +139,11 @@ Get all registries under a subscription
 ```javascript
 import OmniCoreModelAndStateManagementApi from 'omni_core_model_and_state_management_api';
 let defaultClient = OmniCoreModelAndStateManagementApi.ApiClient.instance;
+// Configure API key authorization: apiKey
+let apiKey = defaultClient.authentications['apiKey'];
+apiKey.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//apiKey.apiKeyPrefix = 'Token';
 // Configure Bearer (JWT) access token for authorization: bearerAuth
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
@@ -163,7 +178,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[apiKey](../README.md#apiKey), [bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 
@@ -184,6 +199,11 @@ Get a registry
 ```javascript
 import OmniCoreModelAndStateManagementApi from 'omni_core_model_and_state_management_api';
 let defaultClient = OmniCoreModelAndStateManagementApi.ApiClient.instance;
+// Configure API key authorization: apiKey
+let apiKey = defaultClient.authentications['apiKey'];
+apiKey.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//apiKey.apiKeyPrefix = 'Token';
 // Configure Bearer (JWT) access token for authorization: bearerAuth
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
@@ -214,7 +234,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[apiKey](../README.md#apiKey), [bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 
@@ -235,6 +255,11 @@ Update a registry
 ```javascript
 import OmniCoreModelAndStateManagementApi from 'omni_core_model_and_state_management_api';
 let defaultClient = OmniCoreModelAndStateManagementApi.ApiClient.instance;
+// Configure API key authorization: apiKey
+let apiKey = defaultClient.authentications['apiKey'];
+apiKey.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//apiKey.apiKeyPrefix = 'Token';
 // Configure Bearer (JWT) access token for authorization: bearerAuth
 let bearerAuth = defaultClient.authentications['bearerAuth'];
 bearerAuth.accessToken = "YOUR ACCESS TOKEN"
@@ -271,7 +296,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../README.md#bearerAuth)
+[apiKey](../README.md#apiKey), [bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 

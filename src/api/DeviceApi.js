@@ -87,7 +87,7 @@ export default class DeviceApi {
       let formParams = {
       };
 
-      let authNames = ['bearerAuth'];
+      let authNames = ['apiKey', 'bearerAuth'];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
       let returnType = Info;
@@ -140,7 +140,7 @@ export default class DeviceApi {
       let formParams = {
       };
 
-      let authNames = ['bearerAuth'];
+      let authNames = ['apiKey', 'bearerAuth'];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
       let returnType = Info;
@@ -199,7 +199,7 @@ export default class DeviceApi {
       let formParams = {
       };
 
-      let authNames = ['bearerAuth'];
+      let authNames = ['apiKey', 'bearerAuth'];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
       let returnType = Object;
@@ -252,7 +252,7 @@ export default class DeviceApi {
       let formParams = {
       };
 
-      let authNames = ['bearerAuth'];
+      let authNames = ['apiKey', 'bearerAuth'];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
       let returnType = Device;
@@ -306,7 +306,7 @@ export default class DeviceApi {
       let formParams = {
       };
 
-      let authNames = ['bearerAuth'];
+      let authNames = ['apiKey', 'bearerAuth'];
       let contentTypes = [];
       let accepts = ['application/json'];
       let returnType = Info;
@@ -366,7 +366,7 @@ export default class DeviceApi {
       let formParams = {
       };
 
-      let authNames = ['bearerAuth'];
+      let authNames = ['apiKey', 'bearerAuth'];
       let contentTypes = [];
       let accepts = ['application/json'];
       let returnType = ListDeviceConfigVersionsResponse;
@@ -420,7 +420,7 @@ export default class DeviceApi {
       let formParams = {
       };
 
-      let authNames = ['bearerAuth'];
+      let authNames = ['apiKey', 'bearerAuth'];
       let contentTypes = [];
       let accepts = ['application/json'];
       let returnType = Device;
@@ -486,7 +486,7 @@ export default class DeviceApi {
       let formParams = {
       };
 
-      let authNames = ['bearerAuth'];
+      let authNames = ['apiKey', 'bearerAuth'];
       let contentTypes = [];
       let accepts = ['application/json'];
       let returnType = ListDevicesResponse;
@@ -544,7 +544,7 @@ export default class DeviceApi {
       let formParams = {
       };
 
-      let authNames = ['bearerAuth'];
+      let authNames = ['apiKey', 'bearerAuth'];
       let contentTypes = [];
       let accepts = ['application/json'];
       let returnType = ListDeviceStatesResponse;
@@ -603,7 +603,7 @@ export default class DeviceApi {
       let formParams = {
       };
 
-      let authNames = ['bearerAuth'];
+      let authNames = ['apiKey', 'bearerAuth'];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
       let returnType = Object;
@@ -656,7 +656,7 @@ export default class DeviceApi {
       let formParams = {
       };
 
-      let authNames = ['bearerAuth'];
+      let authNames = ['apiKey', 'bearerAuth'];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
       let returnType = Info;
@@ -709,7 +709,7 @@ export default class DeviceApi {
       let formParams = {
       };
 
-      let authNames = ['bearerAuth'];
+      let authNames = ['apiKey', 'bearerAuth'];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
       let returnType = Info;
@@ -768,7 +768,7 @@ export default class DeviceApi {
       let formParams = {
       };
 
-      let authNames = ['bearerAuth'];
+      let authNames = ['apiKey', 'bearerAuth'];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
       let returnType = DeviceConfig;
@@ -833,7 +833,7 @@ export default class DeviceApi {
       let formParams = {
       };
 
-      let authNames = ['bearerAuth'];
+      let authNames = ['apiKey', 'bearerAuth'];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
       let returnType = Device;
