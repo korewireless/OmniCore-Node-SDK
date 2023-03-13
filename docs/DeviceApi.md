@@ -14,9 +14,9 @@ Method | HTTP request | Description
 [**getDevices**](DeviceApi.md#getDevices) | **GET** /model-state-management/subscriptions/{subscriptionId}/registries/{registryId}/devices | 
 [**getStates**](DeviceApi.md#getStates) | **GET** /model-state-management/subscriptions/{subscriptionid}/registries/{registryId}/devices/{deviceId}/states | 
 [**sendCommandToDevice**](DeviceApi.md#sendCommandToDevice) | **POST** /model-state-management/subscriptions/{subscriptionid}/registries/{registryId}/devices/{deviceId}/sendCommandToDevice | 
-[**sendConfigurationToDevice**](DeviceApi.md#sendConfigurationToDevice) | **POST** /model-state-management/subscriptions/{subscriptionid}/registries/{registryId}/devices/{deviceId}/sendConfigurationToDevice | 
 [**unBindDevice**](DeviceApi.md#unBindDevice) | **POST** /model-state-management/subscriptions/{subscriptionId}/registries/{registryId}/unbindDeviceFromGateway | 
 [**unBindDevices**](DeviceApi.md#unBindDevices) | **POST** /model-state-management/subscriptions/{subscriptionId}/registries/{registryId}/unbindDevicesFromGateway | 
+[**updateConfigurationToDevice**](DeviceApi.md#updateConfigurationToDevice) | **POST** /model-state-management/subscriptions/{subscriptionid}/registries/{registryId}/devices/{deviceId}/updateConfigurationToDevice | 
 [**updateDevice**](DeviceApi.md#updateDevice) | **PATCH** /model-state-management/subscriptions/{subscriptionId}/registries/{registryId}/devices/{deviceId} | 
 
 
@@ -577,61 +577,6 @@ Name | Type | Description  | Notes
 - **Accept**: application/json
 
 
-## sendConfigurationToDevice
-
-> DeviceConfig sendConfigurationToDevice(subscriptionid, registryId, deviceId, device)
-
-
-
-Send A Configuration Of A Device
-
-### Example
-
-```javascript
-import OmniCoreModelAndStateManagementApi from 'omni_core_model_and_state_management_api';
-let defaultClient = OmniCoreModelAndStateManagementApi.ApiClient.instance;
-// Configure Bearer (JWT) access token for authorization: bearerAuth
-let bearerAuth = defaultClient.authentications['bearerAuth'];
-bearerAuth.accessToken = "YOUR ACCESS TOKEN"
-
-let apiInstance = new OmniCoreModelAndStateManagementApi.DeviceApi();
-let subscriptionid = "subscriptionid_example"; // String | Subscription ID
-let registryId = "registryId_example"; // String | Registry ID
-let deviceId = "deviceId_example"; // String | Device ID
-let device = new OmniCoreModelAndStateManagementApi.DeviceConfiguration(); // DeviceConfiguration | application/json
-apiInstance.sendConfigurationToDevice(subscriptionid, registryId, deviceId, device, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **subscriptionid** | **String**| Subscription ID | 
- **registryId** | **String**| Registry ID | 
- **deviceId** | **String**| Device ID | 
- **device** | [**DeviceConfiguration**](DeviceConfiguration.md)| application/json | 
-
-### Return type
-
-[**DeviceConfig**](DeviceConfig.md)
-
-### Authorization
-
-[bearerAuth](../README.md#bearerAuth)
-
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
 ## unBindDevice
 
 > Info unBindDevice(subscriptionId, registryId, device)
@@ -727,6 +672,61 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Info**](Info.md)
+
+### Authorization
+
+[bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## updateConfigurationToDevice
+
+> DeviceConfig updateConfigurationToDevice(subscriptionid, registryId, deviceId, device)
+
+
+
+Update A Configuration Of A Device
+
+### Example
+
+```javascript
+import OmniCoreModelAndStateManagementApi from 'omni_core_model_and_state_management_api';
+let defaultClient = OmniCoreModelAndStateManagementApi.ApiClient.instance;
+// Configure Bearer (JWT) access token for authorization: bearerAuth
+let bearerAuth = defaultClient.authentications['bearerAuth'];
+bearerAuth.accessToken = "YOUR ACCESS TOKEN"
+
+let apiInstance = new OmniCoreModelAndStateManagementApi.DeviceApi();
+let subscriptionid = "subscriptionid_example"; // String | Subscription ID
+let registryId = "registryId_example"; // String | Registry ID
+let deviceId = "deviceId_example"; // String | Device ID
+let device = new OmniCoreModelAndStateManagementApi.DeviceConfiguration(); // DeviceConfiguration | application/json
+apiInstance.updateConfigurationToDevice(subscriptionid, registryId, deviceId, device, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **subscriptionid** | **String**| Subscription ID | 
+ **registryId** | **String**| Registry ID | 
+ **deviceId** | **String**| Device ID | 
+ **device** | [**DeviceConfiguration**](DeviceConfiguration.md)| application/json | 
+
+### Return type
+
+[**DeviceConfig**](DeviceConfig.md)
 
 ### Authorization
 
