@@ -92,7 +92,7 @@ export default class DeviceApi {
       let accepts = ['application/json'];
       let returnType = Info;
       return this.apiClient.callApi(
-        '/subscriptions/{subscriptionId}/registries/{registryId}/bindDeviceToGateway', 'POST',
+        '/model-state-management/subscriptions/{subscriptionId}/registries/{registryId}/bindDeviceToGateway', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );
@@ -145,7 +145,7 @@ export default class DeviceApi {
       let accepts = ['application/json'];
       let returnType = Info;
       return this.apiClient.callApi(
-        '/subscriptions/{subscriptionId}/registries/{registryId}/bindDevicesToGateway', 'POST',
+        '/model-state-management/subscriptions/{subscriptionId}/registries/{registryId}/bindDevicesToGateway', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );
@@ -204,7 +204,7 @@ export default class DeviceApi {
       let accepts = ['application/json'];
       let returnType = Object;
       return this.apiClient.callApi(
-        '/subscriptions/{subscriptionid}/registries/{registryId}/devices/{deviceId}/communication', 'PUT',
+        '/model-state-management/subscriptions/{subscriptionid}/registries/{registryId}/devices/{deviceId}/communication', 'PUT',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );
@@ -257,7 +257,7 @@ export default class DeviceApi {
       let accepts = ['application/json'];
       let returnType = Device;
       return this.apiClient.callApi(
-        '/subscriptions/{subscriptionId}/registries/{registryId}/devices', 'POST',
+        '/model-state-management/subscriptions/{subscriptionId}/registries/{registryId}/devices', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );
@@ -311,7 +311,7 @@ export default class DeviceApi {
       let accepts = ['application/json'];
       let returnType = Info;
       return this.apiClient.callApi(
-        '/subscriptions/{subscriptionId}/registries/{registryId}/devices/{deviceId}', 'DELETE',
+        '/model-state-management/subscriptions/{subscriptionId}/registries/{registryId}/devices/{deviceId}', 'DELETE',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );
@@ -371,7 +371,7 @@ export default class DeviceApi {
       let accepts = ['application/json'];
       let returnType = ListDeviceConfigVersionsResponse;
       return this.apiClient.callApi(
-        '/subscriptions/{subscriptionid}/registries/{registryId}/devices/{deviceId}/configVersions', 'GET',
+        '/model-state-management/subscriptions/{subscriptionid}/registries/{registryId}/devices/{deviceId}/configVersions', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );
@@ -425,7 +425,7 @@ export default class DeviceApi {
       let accepts = ['application/json'];
       let returnType = Device;
       return this.apiClient.callApi(
-        '/subscriptions/{subscriptionId}/registries/{registryId}/devices/{deviceId}', 'GET',
+        '/model-state-management/subscriptions/{subscriptionId}/registries/{registryId}/devices/{deviceId}', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );
@@ -491,7 +491,7 @@ export default class DeviceApi {
       let accepts = ['application/json'];
       let returnType = ListDevicesResponse;
       return this.apiClient.callApi(
-        '/subscriptions/{subscriptionId}/registries/{registryId}/devices', 'GET',
+        '/model-state-management/subscriptions/{subscriptionId}/registries/{registryId}/devices', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );
@@ -549,7 +549,7 @@ export default class DeviceApi {
       let accepts = ['application/json'];
       let returnType = ListDeviceStatesResponse;
       return this.apiClient.callApi(
-        '/subscriptions/{subscriptionid}/registries/{registryId}/devices/{deviceId}/states', 'GET',
+        '/model-state-management/subscriptions/{subscriptionid}/registries/{registryId}/devices/{deviceId}/states', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );
@@ -608,7 +608,66 @@ export default class DeviceApi {
       let accepts = ['application/json'];
       let returnType = Object;
       return this.apiClient.callApi(
-        '/subscriptions/{subscriptionid}/registries/{registryId}/devices/{deviceId}/sendCommandToDevice', 'POST',
+        '/model-state-management/subscriptions/{subscriptionid}/registries/{registryId}/devices/{deviceId}/sendCommandToDevice', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the sendConfigurationToDevice operation.
+     * @callback module:api/DeviceApi~sendConfigurationToDeviceCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/DeviceConfig} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * Send A Configuration Of A Device
+     * @param {String} subscriptionid Subscription ID
+     * @param {String} registryId Registry ID
+     * @param {String} deviceId Device ID
+     * @param {module:model/DeviceConfiguration} device application/json
+     * @param {module:api/DeviceApi~sendConfigurationToDeviceCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/DeviceConfig}
+     */
+    sendConfigurationToDevice(subscriptionid, registryId, deviceId, device, callback) {
+      let postBody = device;
+      // verify the required parameter 'subscriptionid' is set
+      if (subscriptionid === undefined || subscriptionid === null) {
+        throw new Error("Missing the required parameter 'subscriptionid' when calling sendConfigurationToDevice");
+      }
+      // verify the required parameter 'registryId' is set
+      if (registryId === undefined || registryId === null) {
+        throw new Error("Missing the required parameter 'registryId' when calling sendConfigurationToDevice");
+      }
+      // verify the required parameter 'deviceId' is set
+      if (deviceId === undefined || deviceId === null) {
+        throw new Error("Missing the required parameter 'deviceId' when calling sendConfigurationToDevice");
+      }
+      // verify the required parameter 'device' is set
+      if (device === undefined || device === null) {
+        throw new Error("Missing the required parameter 'device' when calling sendConfigurationToDevice");
+      }
+
+      let pathParams = {
+        'subscriptionid': subscriptionid,
+        'registryId': registryId,
+        'deviceId': deviceId
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['bearerAuth'];
+      let contentTypes = ['application/json'];
+      let accepts = ['application/json'];
+      let returnType = DeviceConfig;
+      return this.apiClient.callApi(
+        '/model-state-management/subscriptions/{subscriptionid}/registries/{registryId}/devices/{deviceId}/sendConfigurationToDevice', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );
@@ -661,7 +720,7 @@ export default class DeviceApi {
       let accepts = ['application/json'];
       let returnType = Info;
       return this.apiClient.callApi(
-        '/subscriptions/{subscriptionId}/registries/{registryId}/unbindDeviceFromGateway', 'POST',
+        '/model-state-management/subscriptions/{subscriptionId}/registries/{registryId}/unbindDeviceFromGateway', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );
@@ -714,66 +773,7 @@ export default class DeviceApi {
       let accepts = ['application/json'];
       let returnType = Info;
       return this.apiClient.callApi(
-        '/subscriptions/{subscriptionId}/registries/{registryId}/unbindDevicesFromGateway', 'POST',
-        pathParams, queryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType, null, callback
-      );
-    }
-
-    /**
-     * Callback function to receive the result of the updateConfigurationToDevice operation.
-     * @callback module:api/DeviceApi~updateConfigurationToDeviceCallback
-     * @param {String} error Error message, if any.
-     * @param {module:model/DeviceConfig} data The data returned by the service call.
-     * @param {String} response The complete HTTP response.
-     */
-
-    /**
-     * Update A Configuration Of A Device
-     * @param {String} subscriptionid Subscription ID
-     * @param {String} registryId Registry ID
-     * @param {String} deviceId Device ID
-     * @param {module:model/DeviceConfiguration} device application/json
-     * @param {module:api/DeviceApi~updateConfigurationToDeviceCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/DeviceConfig}
-     */
-    updateConfigurationToDevice(subscriptionid, registryId, deviceId, device, callback) {
-      let postBody = device;
-      // verify the required parameter 'subscriptionid' is set
-      if (subscriptionid === undefined || subscriptionid === null) {
-        throw new Error("Missing the required parameter 'subscriptionid' when calling updateConfigurationToDevice");
-      }
-      // verify the required parameter 'registryId' is set
-      if (registryId === undefined || registryId === null) {
-        throw new Error("Missing the required parameter 'registryId' when calling updateConfigurationToDevice");
-      }
-      // verify the required parameter 'deviceId' is set
-      if (deviceId === undefined || deviceId === null) {
-        throw new Error("Missing the required parameter 'deviceId' when calling updateConfigurationToDevice");
-      }
-      // verify the required parameter 'device' is set
-      if (device === undefined || device === null) {
-        throw new Error("Missing the required parameter 'device' when calling updateConfigurationToDevice");
-      }
-
-      let pathParams = {
-        'subscriptionid': subscriptionid,
-        'registryId': registryId,
-        'deviceId': deviceId
-      };
-      let queryParams = {
-      };
-      let headerParams = {
-      };
-      let formParams = {
-      };
-
-      let authNames = ['bearerAuth'];
-      let contentTypes = ['application/json'];
-      let accepts = ['application/json'];
-      let returnType = DeviceConfig;
-      return this.apiClient.callApi(
-        '/subscriptions/{subscriptionid}/registries/{registryId}/devices/{deviceId}/updateConfigurationToDevice', 'POST',
+        '/model-state-management/subscriptions/{subscriptionId}/registries/{registryId}/unbindDevicesFromGateway', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );
@@ -838,7 +838,7 @@ export default class DeviceApi {
       let accepts = ['application/json'];
       let returnType = Device;
       return this.apiClient.callApi(
-        '/subscriptions/{subscriptionId}/registries/{registryId}/devices/{deviceId}', 'PATCH',
+        '/model-state-management/subscriptions/{subscriptionId}/registries/{registryId}/devices/{deviceId}', 'PATCH',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );

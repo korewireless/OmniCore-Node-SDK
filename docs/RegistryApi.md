@@ -1,14 +1,14 @@
 # OmniCoreModelAndStateManagementApi.RegistryApi
 
-All URIs are relative to *https://demo-api.omnicore.cloud.korewireless.com/model-state-management*
+All URIs are relative to *https://demo-api.omnicore.cloud.korewireless.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**createRegistry**](RegistryApi.md#createRegistry) | **POST** /subscriptions/{subscriptionId}/registries | 
-[**deleteRegistry**](RegistryApi.md#deleteRegistry) | **DELETE** /subscriptions/{subscriptionId}/registries/{registryId} | 
-[**getRegistries**](RegistryApi.md#getRegistries) | **GET** /subscriptions/{subscriptionId}/registries | 
-[**getRegistry**](RegistryApi.md#getRegistry) | **GET** /subscriptions/{subscriptionId}/registries/{registryId} | 
-[**updateRegistry**](RegistryApi.md#updateRegistry) | **PATCH** /subscriptions/{subscriptionId}/registries/{registryId} | 
+[**createRegistry**](RegistryApi.md#createRegistry) | **POST** /model-state-management/subscriptions/{subscriptionId}/registries | 
+[**deleteRegistry**](RegistryApi.md#deleteRegistry) | **DELETE** /model-state-management/subscriptions/{subscriptionId}/registries/{registryId} | 
+[**getRegistries**](RegistryApi.md#getRegistries) | **GET** /model-state-management/subscriptions/{subscriptionId}/registries | 
+[**getRegistry**](RegistryApi.md#getRegistry) | **GET** /model-state-management/subscriptions/{subscriptionId}/registries/{registryId} | 
+[**updateRegistry**](RegistryApi.md#updateRegistry) | **PATCH** /model-state-management/subscriptions/{subscriptionId}/registries/{registryId} | 
 
 
 

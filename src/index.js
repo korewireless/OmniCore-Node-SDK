@@ -17,7 +17,6 @@ import BindRequest from './model/BindRequest';
 import BindRequestIdsGateway from './model/BindRequestIdsGateway';
 import BlockCommunicationBody from './model/BlockCommunicationBody';
 import Device from './model/Device';
-import DeviceCertificate from './model/DeviceCertificate';
 import DeviceCommand from './model/DeviceCommand';
 import DeviceConfig from './model/DeviceConfig';
 import DeviceConfiguration from './model/DeviceConfiguration';
@@ -40,7 +39,6 @@ import MqttConfig from './model/MqttConfig';
 import NotificationConfig from './model/NotificationConfig';
 import PublicKeyCertificate from './model/PublicKeyCertificate';
 import PublicKeyCredential from './model/PublicKeyCredential';
-import RegistryCertificate from './model/RegistryCertificate';
 import RegistryCredential from './model/RegistryCredential';
 import X509CertificateDetails from './model/X509CertificateDetails';
 import DeviceApi from './api/DeviceApi';
@@ -108,12 +106,6 @@ export {
      * @property {module:model/Device}
      */
     Device,
-
-    /**
-     * The DeviceCertificate model constructor.
-     * @property {module:model/DeviceCertificate}
-     */
-    DeviceCertificate,
 
     /**
      * The DeviceCommand model constructor.
@@ -246,12 +238,6 @@ export {
      * @property {module:model/PublicKeyCredential}
      */
     PublicKeyCredential,
-
-    /**
-     * The RegistryCertificate model constructor.
-     * @property {module:model/RegistryCertificate}
-     */
-    RegistryCertificate,
 
     /**
      * The RegistryCredential model constructor.

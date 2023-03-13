@@ -33,11 +33,11 @@ class ApiClient {
      * Overrides the default value set in spec file if present
      * @param {String} basePath
      */
-    constructor(basePath = 'https://demo-api.omnicore.cloud.korewireless.com/model-state-management') {
+    constructor(basePath = 'https://demo-api.omnicore.cloud.korewireless.com') {
         /**
          * The base URL against which to resolve every API call's (relative) path.
          * @type {String}
-         * @default https://demo-api.omnicore.cloud.korewireless.com/model-state-management
+         * @default https://demo-api.omnicore.cloud.korewireless.com
          */
         this.basePath = basePath.replace(/\/+$/, '');
 
@@ -593,7 +593,7 @@ class ApiClient {
     hostSettings() {
         return [
             {
-              'url': "https://demo-api.omnicore.cloud.korewireless.com/model-state-management",
+              'url': "https://demo-api.omnicore.cloud.korewireless.com",
               'description': "No description provided",
             }
       ];

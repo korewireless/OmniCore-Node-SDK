@@ -76,7 +76,7 @@ export default class RegistryApi {
       let accepts = ['application/json'];
       let returnType = DeviceRegistry;
       return this.apiClient.callApi(
-        '/subscriptions/{subscriptionId}/registries', 'POST',
+        '/model-state-management/subscriptions/{subscriptionId}/registries', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );
@@ -124,7 +124,7 @@ export default class RegistryApi {
       let accepts = ['application/json'];
       let returnType = Info;
       return this.apiClient.callApi(
-        '/subscriptions/{subscriptionId}/registries/{registryId}', 'DELETE',
+        '/model-state-management/subscriptions/{subscriptionId}/registries/{registryId}', 'DELETE',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );
@@ -172,7 +172,7 @@ export default class RegistryApi {
       let accepts = ['application/json'];
       let returnType = ListDeviceRegistries;
       return this.apiClient.callApi(
-        '/subscriptions/{subscriptionId}/registries', 'GET',
+        '/model-state-management/subscriptions/{subscriptionId}/registries', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );
@@ -220,7 +220,7 @@ export default class RegistryApi {
       let accepts = ['application/json'];
       let returnType = DeviceRegistry;
       return this.apiClient.callApi(
-        '/subscriptions/{subscriptionId}/registries/{registryId}', 'GET',
+        '/model-state-management/subscriptions/{subscriptionId}/registries/{registryId}', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );
@@ -277,7 +277,7 @@ export default class RegistryApi {
       let accepts = ['application/json'];
       let returnType = DeviceRegistry;
       return this.apiClient.callApi(
-        '/subscriptions/{subscriptionId}/registries/{registryId}', 'PATCH',
+        '/model-state-management/subscriptions/{subscriptionId}/registries/{registryId}', 'PATCH',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );
